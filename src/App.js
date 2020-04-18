@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import './Table/Table.css'
+import './Slider/Slider'
+import ReactDOM from 'react-dom';
+import Tooltip from 'rc-tooltip';
+import Slider from 'rc-slider';
 
 
 class Table extends Component {

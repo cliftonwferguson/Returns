@@ -10,6 +10,17 @@ class Table extends Component {
       super(props) 
       this.state = { 
          indexReturns: [
+            { year: '1991', yields: 30.47, cumulative: 30.47 },
+            { year: '1992', yields: 7.62, cumulative: -0.75 },
+            { year: '1993', yields: 10.08, cumulative: 0.32 },
+            { year: '1994', yields: 1.32, cumulative: -0.87 },
+            { year: '1995', yields: 37.58, cumulative: 27.47 },
+            { year: '1996', yields: 22.96, cumulative: -0.39 },
+            { year: '1997', yields: 33.36, cumulative: 0.45 },
+            { year: '1998', yields: 28.58, cumulative: -0.14 },
+            { year: '1999', yields: 21.04, cumulative: -0.26 },
+            { year: '2000', yields: -9.1, cumulative: -1.43 },
+            { year: '2001', yields: -11.89, cumulative: 0.31 },
             { year: '2002', yields: -22.1, cumulative: 0.86 },
             { year: '2003', yields: 28.68, cumulative: -2.30 },
             { year: '2004', yields: 10.88, cumulative: -0.62 },

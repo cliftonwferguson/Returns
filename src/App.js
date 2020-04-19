@@ -10,6 +10,7 @@ class Table extends Component {
       super(props) 
       this.state = { 
          indexReturns: [
+            { year: '2016', yields: 11.96, cumulative: 1 },
             { year: '2017', yields: 21.83, cumulative: 1 },
             { year: '2018', yields: -4.38, cumulative: 2 },
             { year: '2019', yields: 31.49, cumulative: 3},
@@ -55,7 +56,6 @@ class Table extends Component {
       return (
          <div className="App">
             <h1>S&P Total Returns</h1>
-            <p>React Slider Component</p>
             <Slider />
             {/* <Slider
                min={0}

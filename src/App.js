@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import './Table/Table.css'
 import './Slider/Slider'
-import ReactDOM from 'react-dom';
-import Tooltip from 'rc-tooltip';
-import Slider from 'rc-slider';
-
+import Slider, { Range } from 'rc-slider';
 
 class Table extends Component {
    constructor(props) {
@@ -43,8 +40,9 @@ class Table extends Component {
 
    render() { 
       return (
-         <div>
+         <div className="App">
             <h1>S&P Total Returns</h1>
+            <p>React Slider Component</p>
              <table id='indexReturns'>
                <tbody>
                   <tr>{this.renderTableHeader()}</tr>

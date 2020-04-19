@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import './Table/Table.css'
-import './Slider/Slider'
-import Slider, { Range } from 'rc-slider';
+import './Table/Table.css';
+import Slider from './slider/Slider'
+
 
 class Table extends Component {
    constructor(props) {
@@ -43,6 +43,7 @@ class Table extends Component {
          <div className="App">
             <h1>S&P Total Returns</h1>
             <p>React Slider Component</p>
+            <Slider />
              <table id='indexReturns'>
                <tbody>
                   <tr>{this.renderTableHeader()}</tr>
@@ -54,5 +55,6 @@ class Table extends Component {
    }
 }
 
-export default Table
+export default Table;
+
 

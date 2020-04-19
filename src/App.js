@@ -4,6 +4,7 @@ import './Table/Table.css';
 import Slider from './slider/Slider'
 
 
+
 class Table extends Component {
    constructor(props) {
       super(props) 
@@ -38,12 +39,32 @@ class Table extends Component {
       })
    }
 
+   
+   
+
    render() { 
+       
+       {/*
+
+      const onChangeSlider = e => {
+        setRangeValue(parseInt(e.target.value, this.state.indexReturns);
+      }
+      */}
+
+
       return (
          <div className="App">
             <h1>S&P Total Returns</h1>
             <p>React Slider Component</p>
             <Slider />
+            {/* <Slider
+               min={0}
+              max={100}
+              step={1}
+              defaultLength={this.state.indexReturns.length}
+              value={this.state.indexReturns.length}
+              onChangeValue={onChangeSlider} 
+              />*/}
              <table id='indexReturns'>
                <tbody>
                   <tr>{this.renderTableHeader()}</tr>

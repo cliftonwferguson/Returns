@@ -2,13 +2,34 @@ import React from 'react';
 
 
 
-const Slider = () => {
-       
+const Slider = (props) => {
+     const { 
+        step,
+        min,
+        max,
+        value,
+        onChangeValue
+      } = props;    
+  
+  const handleChange = max => e => {
+  	onChangeValue(e); 
+  }
+
 	return (
 		  <>
-		  <div> Slider Component</div>
+		    <div className="slider-container"> 
+              <input
+                className= "range-slider"
+                type="range"
+                step={step}
+                min={min}
+                max={max}
+                value={value}
+                onChange={handleChange(max)}
+              /> 
+		    </div>
 		  </>
-		)
+	)
 }
 
  export default Slider;
